@@ -1,0 +1,21 @@
+/* Reset and base styles */
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* PWA standalone mode adjustments */
+@media (display-mode: standalone) {
+  body {
+    user-select: none;
+  }
+  
+  .app {
+    padding-top: calc(40px + env(safe-area-inset-top, 0px));
+  }
+}
